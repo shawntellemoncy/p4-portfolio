@@ -1,0 +1,42 @@
+/* Your Website Styles */
+
+body{background:#000;}
+.container{
+  margin: 200px auto;
+  width: 900px;
+  height: 700px;
+  overflow: hidden;
+  border: 10px solid;
+  border-top-color: #856036;
+  border-left-color: #5d4426;
+  border-bottom-color: #856036;
+  border-right-color: #5d4426;
+  position: relative;
+}
+
+header  {
+	color: cornflowerblue;
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+}
+
+.photo{
+  position: absolute;
+  animation: round 16s infinite;
+  opacity: 0;
+  
+}
+@keyframes round{   
+  25%{opacity:1;}
+  40%{opacity:0;}
+} 
+
+img:nth-child(4){animation-delay:0s;}
+img:nth-child(3){animation-delay:4s;}
+img:nth-child(2){animation-delay:8s;}
+img:nth-child(1){animation-delay:12s;}
+
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
+}
